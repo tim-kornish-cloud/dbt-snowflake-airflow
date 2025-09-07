@@ -6,3 +6,4 @@
 2) create warehouse
 3) create database in warehosue
 4) create role
+5) grant usage of warehouse to role
