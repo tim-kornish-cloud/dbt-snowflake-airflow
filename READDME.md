@@ -45,7 +45,7 @@ models:
 
 
 2) running sql scripts:
-1. 
+
 run script: stg_tpch_line_item.sql
 
 ```code
@@ -54,8 +54,16 @@ dbt run -s stg_tpch_line_item
 
 3) running tests
 
-1. run any test in current directory
+run any test in current directory
 
 ```code
 dbt test
 ```
+
+## current issue running Dag in airflow
+
+since my main computer wsl doesn't work due the use having whitespace,
+I'm trying to run this on windows, which does not work for airflow. 
+Everything else connecting to snowflake works so far.
+
+Going to set a new user on computer for developing in wsl2-ubuntu
