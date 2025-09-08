@@ -29,3 +29,16 @@
 ~$ cd data_pipeline
 ~$ code .
 ```
+
+### set up package.yml and dbt_project.yml
+
+1) modify dbt_project.yml
+ - add the following under the models: 
+models: 
+  data__pipeline:
+    staging:
+      +materialized: view
+      snowflake_warehouse: dbt_warehouse
+    marts:
+      +materialized: table
+      snowflake_warehouse: dbt_warehouse
