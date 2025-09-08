@@ -42,3 +42,20 @@ models:
     marts:
       +materialized: table
       snowflake_warehouse: dbt_warehouse
+
+
+2) running sql scripts:
+1. 
+run script: stg_tpch_line_item.sql
+
+```code
+dbt run -s stg_tpch_line_item
+```
+
+3) running tests
+
+1. run any test in current directory
+
+```code
+dbt test
+```
