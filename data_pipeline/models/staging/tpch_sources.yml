@@ -11,7 +11,7 @@ sources:
             tests: 
               - unique
               - not_null
-      - name: line_item
+      - name: lineitem
         columns:
           - name: l_orderkey
             test:
